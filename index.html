@@ -71,13 +71,13 @@
     });
 
     // Show main button
-    Telegram.WebApp.MainButton.setParams({
-      text: 'Main Button'
-    });
-    Telegram.WebApp.MainButton.onClick(function () {
-      Telegram.WebApp.showAlert('Main Button was clicked')
-    });
-    Telegram.WebApp.MainButton.show();
+    // Telegram.WebApp.MainButton.setParams({
+    //   text: 'Main Button'
+    // });
+    // Telegram.WebApp.MainButton.onClick(function () {
+    //   Telegram.WebApp.showAlert('Main Button was clicked')
+    // });
+    // Telegram.WebApp.MainButton.show();
 
     // Function to call showPopup API
     function showPopup() {
@@ -113,10 +113,10 @@
       // expandEl.innerText = 'Is Expanded: ' + (Telegram.WebApp.isExpanded ? 'true' : 'false');
     }
 
-    Telegram.WebApp.setHeaderColor('secondary_bg_color');
+    // Telegram.WebApp.setHeaderColor('secondary_bg_color');
 
-    setViewportData();
-    Telegram.WebApp.onEvent('viewportChanged', setViewportData);
+    // setViewportData();
+    // Telegram.WebApp.onEvent('viewportChanged', setViewportData);
 
     Telegram.WebApp.onEvent('themeChanged', function () {
       document.body.setAttribute('style', '--bg-color:' + Telegram.WebApp.backgroundColor);
